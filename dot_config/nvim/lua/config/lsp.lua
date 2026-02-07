@@ -18,4 +18,4 @@ vim.diagnostic.config({
 })
 
 -- enabled lsp servers
-vim.lsp.enable({"lua_ls", "tinymist"})
+vim.lsp.enable({"lua_ls", "tinymist", "rust_analyzer"})
