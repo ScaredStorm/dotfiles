@@ -1,5 +1,8 @@
 local opt = vim.opt
 
+vim.g.mapleader = " "
+vim.g.maplocalleader = "\\"
+
 opt.grepprg = "rg --vimgrep"
 opt.ignorecase = true
 opt.smartcase = true
@@ -18,3 +21,5 @@ opt.number = true
 opt.relativenumber = true
 opt.termguicolors = true
 opt.swapfile = false
+
+require("vim._core.ui2").enable()
