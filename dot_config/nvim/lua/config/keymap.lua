@@ -18,3 +18,5 @@ vim.keymap.set("n", "<leader>lr", vim.lsp.buf.references, { desc = "LSP Referenc
 vim.keymap.set("n", "<leader>ls", vim.lsp.buf.document_symbol, { desc = "LSP Document Symbols" })
 vim.keymap.set("n", "<leader>lS", vim.lsp.buf.workspace_symbol, { desc = "LSP Workspace Symbols" })
 vim.keymap.set("n", "<leader>lf", vim.lsp.buf.format, { desc = "LSP Format file" })
+vim.keymap.set("n", "<leader>lL", function () vim.lsp.codelens.enable(not vim.lsp.codelens.is_enabled()) end, { desc = "LSP Toggle codelens" })
+vim.keymap.set("n", "<leader>lI", function () vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled()) end, { desc = "LSP Toggle inlay hints" })

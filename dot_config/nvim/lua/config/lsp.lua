@@ -17,5 +17,7 @@ vim.diagnostic.config({
     virtual_lines = true,
 })
 
+vim.lsp.inlay_hint.enable(true);
+
 -- enabled lsp servers
 vim.lsp.enable({"lua_ls", "tinymist", "rust_analyzer"})
