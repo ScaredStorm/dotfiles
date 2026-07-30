@@ -1,3 +1,10 @@
+-- terminal mode
+vim.keymap.set("t", "<Esc><Esc>", [[<C-\><C-n>]], { desc = "Exit terminal mode" })
+vim.keymap.set("t", "<c-h>", [[<C-\><C-n><C-w>h]], { desc = "Go to the left window" })
+vim.keymap.set("t", "<c-j>", [[<C-\><C-n><C-w>j]], { desc = "Go to the down window" })
+vim.keymap.set("t", "<c-k>", [[<C-\><C-n><C-w>k]], { desc = "Go to the up window" })
+vim.keymap.set("t", "<c-l>", [[<C-\><C-n><C-w>l]], { desc = "Go to the right window" })
+
 -- x - actions
 vim.keymap.set("n", "<leader>xq", ":copen<CR>", { desc = "Quickfix open" })
 vim.keymap.set("n", "<leader>xl", ":lopen<CR>", { desc = "Location open" })
