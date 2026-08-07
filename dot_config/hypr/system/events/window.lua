@@ -1,0 +1,9 @@
+-- hl.on("window.open", function(_)
+--     local active_workspace = hl.get_active_workspace()
+--     if active_workspace then
+--         local workspace_windows = hl.get_workspace_windows(active_workspace)
+--         if #workspace_windows == 1 then
+--             hl.dispatch(hl.dsp.window.pseudo())
+--         end
+--     end
+-- end)
